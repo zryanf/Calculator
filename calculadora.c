@@ -119,7 +119,7 @@ printf("\n");
 printf("\n");
 printf("\n");
 printf("\n");
-printf(" Tomará que de certo, Copyright © Ryan Ferreira Maciel");
+printf(" Tomará que de certo, Credits © Ryan Ferreira Maciel");
 }
 }
     return 0;
