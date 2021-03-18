@@ -114,6 +114,12 @@ printf("Deseja continuar calculando, sim(s) ou nao(n):");
 scanf(" %c",&loop);
 if(loop == 'n'){
 printf("Valor memoria:%d ",memoria);
+printf("\n");
+printf("\n");
+printf("\n");
+printf("\n");
+printf("\n");
+printf(" Copyright Ryan Ferreira Maciel");
 }
 }
     return 0;
