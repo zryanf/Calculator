@@ -31,6 +31,7 @@ int main(){
     int num, vamemo;
     int v1, v2;
     int res;
+    int memoria = 0;
     char loop = 's';
     while (loop == 's')
     {
@@ -75,11 +76,14 @@ int main(){
             printf("Nao pode ser dividido\n");
             printf("Deseja continuar calculando, sim(s) ou nao(n):");
             scanf(" %c",&loop);
+            if(loop == 'n'){
+            printf("Valor memoria:%d ",memoria);
             continue;
+            }
         }
         else{
             res = dividi(v1,v2);
-            printf("Resultado: %d\n %.3f ",res);
+            printf("Resultado: %d\n",res);
         }
     }
     else if(num==5){
@@ -90,7 +94,10 @@ int main(){
             printf("Nao existe valor para essa raiz\n");
             printf("Deseja continuar calculando, sim(s) ou nao(n):");
             scanf(" %c",&loop);
+            if(loop == 'n'){
+            printf("Valor memoria:%d ",memoria);
             continue;
+            }
         }
         else{
             res = raiz(v1);
@@ -101,13 +108,12 @@ printf("Adicionar resultado da memoria: 1\n");
 printf("Subtrair resultado da memoria: 2\n");
 printf("Nao alterar memoria: 3\n");
 scanf("%d",&vamemo);
-int memoria = 0;
 if(vamemo==1){
-    res = res + memoria;
+    res = memoria + res;
     memoria = res;
 }
 else if(vamemo==2) {
-    res = res - memoria;
+    res = memoria - res;
     memoria = res;
 }
 printf("Deseja continuar calculando, sim(s) ou nao(n):");
@@ -118,8 +124,7 @@ printf("\n");
 printf("\n");
 printf("\n");
 printf("\n");
-printf("\n");
-printf(" Tomará que de certo, Credits © Ryan Ferreira Maciel");
+printf("Credits by Ryan Ferreira Maciel");
 }
 }
     return 0;
